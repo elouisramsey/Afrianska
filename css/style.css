@@ -1,0 +1,869 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Galien;
+    src: url(/fonts/Galien-Bold.ttf),
+        url(/fonts/Galien-Light.ttf),
+        url(/fonts/Galien-Regular.ttf);
+    font-display: optional;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(/fonts/Gilroy-Regular.ttf),
+        url(/fonts/Gilroy-Black.ttf),
+        url(/fonts/Gilroy-Bold.ttf);
+    font-display: optional;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 15px;
+    background-color: #ffffff;
+    font-family: Gilroy;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px 0;
+    width: 100%;
+}
+
+header svg {
+    margin-left: 15px;
+    height: 10%;
+}
+
+.burger {
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+header .burger div {
+    width: 15px;
+    height: 10%;
+    margin: 5px;
+    background: #356EAD;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 100%;
+    height: 700px;
+    background: rgb(248, 248, 248);
+    background: linear-gradient(0deg, rgb(220, 229, 236) 8.84%, rgba(255, 255, 255, 0) 31.12%);
+}
+
+.hero .hero-h1 {
+    position: absolute;
+    width: 510px;
+    height: 148px;
+    left: 212px;
+    top: 189px;
+    font-family: Galien;
+    font-size: 1.5rem;
+    line-height: 75px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
+
+.hero .hero-p {
+    position: absolute;
+    width: 425px;
+    height: 82px;
+    left: 213px;
+    top: 380px;
+    font-family: Gilroy;
+    font-size: 1rem;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.hero .hero-btn {
+    position: absolute;
+    width: 150px;
+    height: 36px;
+    left: 213px;
+    top: 580px;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+}
+
+.hero .hero-btn a {
+    text-decoration: none;
+    position: absolute;
+    width: 150px;
+    height: 36px;
+    font-family: Gilroy;
+    font-weight: normal;
+    font-size: 0.9rem;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+.hero #smart-home {
+    position: absolute;
+    width: 261.14px;
+    height: 178px;
+    left: 1015px;
+    top: 133px;
+    z-index: 5;
+}
+
+.hero #hero-bckgrd {
+    position: absolute;
+    width: 673.77px;
+    height: 509.94px;
+    left: 669.14px;
+    top: 133.31px;
+}
+
+.hero #woman {
+    position: absolute;
+    width: 178.46px;
+    height: 213.51px;
+    left: 1155px;
+    top: 264px;
+    z-index: 5;
+}
+
+.hero #man {
+    position: absolute;
+    width: 136.42px;
+    height: 230.8px;
+    left: 734.22px;
+    top: 408.93px;
+    z-index: 1;
+}
+
+.hero .plaform-txt {
+    position: absolute;
+    width: 48px;
+    height: 46px;
+    left: 851px;
+    top: 379px;
+    z-index: 7;
+    font-family: Gilroy;
+    font-size: 1rem;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.hero #v4 {
+    position: absolute;
+    width: 127.5px;
+    height: 36px;
+    left: 949px;
+    top: 468.5px;
+    border: 2px solid #FFFFFF;
+    z-index: 3;
+}
+
+.hero #v5 {
+    position: absolute;
+    width: 126.5px;
+    height: 24.5px;
+    left: 949.5px;
+    top: 479.5px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+.hero #rec {
+    position: absolute;
+    width: 154px;
+    height: 63px;
+    left: 936px;
+    top: 459px;
+    background: #6FCF97;
+    box-shadow: 0px 4px 10px rgba(111, 207, 151, 0.2);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.hero #platform-rec {
+    position: absolute;
+    width: 81px;
+    height: 50px;
+    left: 834px;
+    top: 377px;
+    background: #56CCF2;
+    box-shadow: 5px 5px 10px rgba(16, 112, 177, 0.2);
+    border-radius: 5px;
+    z-index: 6;
+}
+
+.hero #you-tube {
+    position: absolute;
+    width: 79px;
+    height: 77px;
+    left: 936px;
+    top: 369px;
+    z-index: 3;
+}
+
+.hero #plat-rec-2 {
+    position: absolute;
+    width: 76.98px;
+    height: 189.3px;
+    left: 842px;
+    top: 351px;
+    background: #FFFFFF;
+    border-radius: 5px 0px 0px 5px;
+    z-index: 5;
+}
+
+.hero #plat-rec-3 {
+    position: absolute;
+    width: 266.28px;
+    height: 189.3px;
+    left: 842px;
+    top: 351px;
+    background: linear-gradient(96.26deg, #FFFFFF 18.56%, rgba(255, 255, 255, 0.8) 109.59%);
+    opacity: 0.8;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.hero #three-lines {
+    position: absolute;
+    width: 58px;
+    height: 37px;
+    left: 851px;
+    top: 457px;
+    z-index: 6;
+}
+
+.hero #three-lines-2 {
+    position: absolute;
+    width: 58px;
+    height: 37px;
+    left: 1028px;
+    top: 376px;
+    z-index: 3;
+}
+
+.hero #illustration-bg {
+    position: absolute;
+    width: 646.15px;
+    height: 489.66px;
+    left: 675.93px;
+    top: 153.17px;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.hero #shadow-ill {
+    position: absolute;
+    width: 687.25px;
+    height: 579px;
+    left: 655.38px;
+    top: 133.31px;
+}
+
+/* ==========WHAT WE DO========== */
+
+.what-we-do {
+    position: relative;
+    width: 940px;
+    height: 1162px;
+    left: 213px;
+    top: 100px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.what-we-do p {
+    position: absolute;
+    width: 358px;
+    height: 138px;
+    left: 0px;
+    top: 0px;
+    font-family: Gilroy;
+    font-size: 2.1rem;
+    line-height: 46px;
+    color: #316099;
+}
+
+.what-we-do .group-2 {
+    position: absolute;
+    width: 350px;
+    height: 525px;
+    left: 590px;
+    top: -20px;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+}
+
+.what-we-do .group-2 a {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 40px;
+    top: 450px;
+    font-family: Gilroy;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
+}
+
+/* ==========WHAT WE DO SVG======= */
+
+.what-we-do .group-2 #p2 {
+    position: absolute;
+    width: 259px;
+    height: 60px;
+    left: 40px;
+    top: 230px;
+    font-family: Gilroy;
+    font-size: 1.1rem;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    margin: 0 auto;
+}
+
+.what-we-do .group-2 #p3 {
+    position: absolute;
+    width: 265px;
+    height: 150px;
+    left: 40px;
+    top: 300px;
+    font-family: Gilroy;
+    font-size: 0.9rem;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.what-we-do .business {
+    position: absolute;
+    width: 380px;
+    height: 525px;
+    left: 70px;
+    top: 220px;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+}
+
+.what-we-do .business h1 {
+    position: absolute;
+    width: 259px;
+    height: 60px;
+    left: 40px;
+    top: 230px;
+    font-family: Gilroy;
+    font-size: 1.1rem;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    margin: 0 auto;
+}
+
+.what-we-do .business p {
+    position: absolute;
+    width: 265px;
+    height: 150px;
+    left: 40px;
+    top: 300px;
+    font-family: Gilroy;
+    font-size: 0.9rem;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.what-we-do .business #calender-man {
+    position: absolute;
+    width: 182px;
+    height: 132px;
+    left: 100px;
+    top: 40px;
+}
+
+.what-we-do .business a {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 40px;
+    top: 450px;
+    font-family: Gilroy;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
+}
+
+.what-we-do .what-we-build {
+    position: absolute;
+    width: 380px;
+    height: 525px;
+    left: 560px;
+    top: 585px;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+}
+
+.what-we-do .what-we-build #woman-with-laptop {
+    position: absolute;
+    width: 156px;
+    height: 131px;
+    left: 110px;
+    top: 50px;
+}
+
+.what-we-do .what-we-build h1 {
+    position: absolute;
+    width: 259px;
+    height: 60px;
+    left: 40px;
+    top: 210px;
+    font-family: Gilroy;
+    font-size: 1.1rem;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    margin: 0 auto;
+}
+
+.what-we-do .what-we-build p {
+    position: absolute;
+    width: 265px;
+    height: 150px;
+    left: 40px;
+    top: 305px;
+    font-family: Gilroy;
+    font-size: 0.9rem;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.what-we-do .what-we-build a {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 40px;
+    top: 450px;
+    font-family: Gilroy;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
+}
+
+section {
+    margin-top: 50px;
+    overflow: hidden;
+    width: 100%;
+    height: 1250px;
+    position: relative;
+}
+
+section .finished-project h1 {
+    position: absolute;
+    width: 227px;
+    height: 92px;
+    left: 220px;
+    top: 100px;
+    font-family: Gilroy;
+    font-size: 2rem;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+}
+
+section .finished-project p {
+    position: absolute;
+    width: 540px;
+    height: 80px;
+    left: 533px;
+    top: 100px;
+    font-family: Gilroy;
+    font-size: 1rem;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+section .finished-project-cover {
+    position: absolute;
+    width: 982px;
+    height: 424px;
+    left: 188px;
+    top: 200px;
+    margin-top: 70px;
+}
+
+section .finished-project-cover .bg-cover {
+    position: absolute;
+    width: 982px;
+    height: 424px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(33.97deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 99.78%), url(/images/alberto-castillo-q-mx4mSkK9zeo-unsplash.png);
+    z-index: -1;
+}
+
+section .finished-project-cover .bg-cover #svg-icons {
+    position: absolute;
+    width: 381px;
+    height: 374px;
+    left: 0px;
+    top: 50px;
+    opacity: 2;
+    z-index: 8;
+}
+
+section .finished-project-cover .bg-cover h4 {
+    position: absolute;
+    width: 371px;
+    height: 46px;
+    right: 100px;
+    top: 28px;
+    font-family: Gilroy;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+section .finished-project-cover .bg-cover p {
+    position: absolute;
+    width: 260px;
+    height: 46px;
+    right: 100px;
+    top: 80px;
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+section .finished-project-pic {
+    width: 982px;
+    position: absolute;
+    width: 982px;
+    height: 424px;
+    left: 188px;
+    top: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+section .finished-project-pic .sparklite {
+    width: 400px;
+    height: 417px;
+    border-radius: 10px;
+    background-image: linear-gradient(309.18deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%), url(/images/Dribble\ iphonex\ mockup.png);
+}
+
+section .finished-project-pic .sparklite h3 {
+    width: 100%;
+    font-family: Gilroy;
+    font-size: 24px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-left: 32px;
+}
+
+section .finished-project-pic .sparklite p {
+    width: 100px;
+    height: 40px;
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.8;
+    padding-left: 32px;
+}
+
+section .finished-project-pic .car-rap-app {
+    width: 400px;
+    height: 417px;
+    border-radius: 10px;
+    background-image: linear-gradient(309.18deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%), url(/images/upload.png);
+}
+
+section .finished-project-pic .car-rap-app h3 {
+    width: 100%;
+    font-family: Gilroy;
+    font-size: 24px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-left: 32px;
+}
+
+section .finished-project-pic .car-rap-app p {
+    width: 100px;
+    height: 40px;
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.8;
+    padding-left: 32px;
+}
+
+footer {
+    width: 100%;
+    height: 1680px;
+    background: #5A98D0;
+    border-radius: 200px 0px 0px 0px;
+    position: relative;
+    margin-top: 50px;
+}
+
+footer .cl-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+footer .cl-top h3 {
+    width: 270px;
+    height: 92px;
+    font-family: Gilroy;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-left: 230px;
+}
+
+footer .cl-top p {
+    width: 430px;
+    height: 80px;
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-right: 350px;
+}
+
+footer .cl-table {
+    position: absolute;
+    width: 800px;
+    height: 405px;
+    left: 300px;
+    top: 350px;
+    text-align: center;
+}
+
+footer .cl-table table tr td {
+    width: 300px;
+    height: 200px;
+    font-family: Gilroy;
+    font-size: 20px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid #ffffff;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-collapse: collapse;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+
+footer .cl-table tr .c4 {
+    border-right: none;
+}
+
+footer .cl-table tr .c5 {
+    border-bottom: none;
+}
+
+footer .cl-table tr .mc {
+    background: #1F3F68;
+}
+
+/* ========== SECOND FOOTER SECTION========== */
+
+footer .second-footer-section {
+    position: absolute;
+    font-family: Gilroy;
+    width: 96%;
+    height: 780px;
+    top: 900px;
+    background: #316099;
+    border-radius: 0px 200px 0px 0px;
+}
+
+footer .second-footer-section .s-f-s-border {
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    width: 80%;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+
+footer .second-footer-section .footer-interest {
+    display: flex;
+    justify-content: space-around;
+    width: 860px;
+    height: 250px;
+    margin-left: 179px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+footer .second-footer-section .footer-interest .s-f-s-interest h3 {
+    width: 340px;
+    height: 92px;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+footer .second-footer-section .footer-interest .s-f-s-interest p {
+    width: 460px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+    padding-top: 30px;
+}
+
+
+footer .second-footer-section .s-f-s-border .footer-interest .footer-btn {
+    width: 150px;
+    height: 50px;
+    background: #5A98D0;
+    border-radius: 10px;
+}
+
+footer .second-footer-section .s-f-s-border .footer-interest .footer-btn a {
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: absolute;
+    width: 150px;
+    height: 36px;
+    font-weight: normal;
+    font-size: 0.9rem;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding-top: 10px;
+}
+
+/* =========LAST SECTION OF FOOTER========= */
+
+footer .third-footer-section {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+footer .third-footer-section .address {
+    width: 25%;
+}
+
+footer .third-footer-section .address .logo-text{
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+footer .third-footer-section .address .a {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    padding-bottom: 20px;
+}
+
+footer .third-footer-section .address .a h3 {
+width: 19px;
+height: 26px;
+font-family: Gilroy;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: 0.05em;
+}
+
+footer .third-footer-section .address .a p {
+width: 200px;
+font-family: Gilroy;
+font-size: 16px;
+letter-spacing: 0.05em;
+padding-left: 10px;
+}
+
+footer .third-footer-section .address .about-list ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 159px;
+    list-style: none;
+}
+
+footer .third-footer-section .address .about-list ul li {
+
+    font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.05em;
+}
+
+footer .third-footer-section .address .about-list ul a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* =========COPYRIGHT========= */
+
+footer #copyright-section {
+    margin-left: 143px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.4;
+    padding-top: 35px
+}
